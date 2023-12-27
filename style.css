@@ -174,6 +174,9 @@ button:hover{
     border-left: 1px solid rgba(219, 201, 201, 0.5);
     backdrop-filter: blur(5px);
 }
+.card_container .card:hover{
+    box-shadow: 2px 3px 5px rgba(196, 196, 196, 0.443);
+}
 .card_container .card .btn input{
     padding: 6px 50px;
     background: linear-gradient(to top, deepskyblue,white);
@@ -216,7 +219,7 @@ button:hover{
     border-top: 1px solid rgba(128, 126, 126, 0.5);
     border-left: 1px solid rgba(129, 120, 120, 0.5);
     backdrop-filter: blur(5px);
-    padding: 0 50px;
+    padding: 20px 50px;
 }
 .about .about-img{
     height: 400px;
@@ -277,12 +280,29 @@ button:hover{
 
 /* Application Section */
 
-.application-warp{
-
+.application-warp .application ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
 }
-.application{
-
+.application-warp .application ul li:hover{
+    filter: none;
 }
+.application-warp .application ul li{
+    list-style: none;
+    filter:opacity(0.7);
+    border: 5px solid deepskyblue;
+    background: linear-gradient(to top, deepskyblue,white);
+    padding: 13px;
+    border-radius: 50%;
+}
+.application-warp .application ul li a img{
+    width: 100px;
+    height: 100px;
+}
+/* .application-warp .application{
+
+} */
 .app-head{
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -309,3 +329,62 @@ button:hover{
     color: deepskyblue;
 }
 
+/* Back to top */
+/* .btt .cir{
+    padding: 20px;
+    background: linear-gradient(to top, deepskyblue,white);
+    color: white;
+    width: 50px;
+    z-index: 200;
+    float: right;
+    position: sticky;
+    top: 70vh;
+    border-radius: 50%;
+} */
+
+/* Footer Section */
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 50px;
+    background-color: rgba(63, 55, 55, 0.411);
+}
+.foot .f-con ul{
+    list-style: none;
+}
+.foot .f-con ul li a{
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    font-weight: 500;
+    line-height: 60px;
+}
+.foot .f-img img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid deepskyblue;
+
+}
+.foot .f-social ul{
+    list-style: none;
+}
+.foot .f-social ul li a{
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    font-weight: 500;
+    line-height: 60px;
+}
+footer p{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding: 20px 50px;
+    background-color: rgba(63, 55, 55, 0.611);
+    color: beige;
+}
+footer p #f{
+    text-decoration: underline;
+    cursor: pointer;
+}
