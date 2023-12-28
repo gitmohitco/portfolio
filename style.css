@@ -320,6 +320,57 @@ button:hover{
 .skills{
 
 }
+.skills-progress .sk-img{
+    height: 130px;
+    width: 100%;
+    padding: 4px 20px;
+}
+.skills-progress .sk-img img{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.sk{
+    padding: 20px;
+    background: linear-gradient(to top, deepskyblue,white);
+    border-radius: 10px;
+}
+.skills-progress .sk .sk-desc p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(72, 72, 72);
+}
+.skills-progress .sk h3{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline black;
+    color: deepskyblue;
+}
+.skills-progress .sk input {
+    border: 1px solid gray;
+    padding: 7px 25px;
+    background: linear-gradient(to top, deepskyblue,white);
+    border-radius: 7px;
+    color: rgb(59, 59, 59);
+    cursor: pointer;
+    margin-top: 7px;
+    width: 100%;
+}
+.skills-progress{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    padding: 0px 50px;
+    margin: 50px 0;
+    box-shadow: 2px 3px 5px rgba(128, 128, 128, 0.409);
+}
+.skills-progress .sk:nth-child(2n+1){
+    transform: translateY(-30px) ;
+}
+.skills-progress .sk:hover{
+    transform: none;
+}
 .skill-head{
     text-align: center;
     font-family: 'Poppins',sans-serif;
