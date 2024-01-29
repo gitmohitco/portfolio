@@ -6,7 +6,7 @@
     transition: all 0.7s ease;
 }
 body{
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.681);
 }
 header{
     position: sticky;
@@ -25,7 +25,7 @@ nav .logo{
     margin-top: 5px;
 }
 nav .logo:hover{
-    filter: drop-shadow(1px 1px 3px rgb(58, 144, 106));
+    /* filter: drop-shadow(1px 1px 3px rgb(67, 58, 144)); */
 }
 nav ul{
     list-style: none;
@@ -63,7 +63,7 @@ nav ul a:hover{
     line-height: 100px;
 }
 .banner .bg_img{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) , url("./developer.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.823), rgba(0, 0, 0, 0.789)) , url("./developer.png");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -75,7 +75,7 @@ nav ul a:hover{
     font-size: 2.1rem;
 }
 .h1 .wel{
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 .subtitle{
     font-size: 2.5rem;
@@ -83,7 +83,7 @@ nav ul a:hover{
     color: white;
 }
 .subtitle .wel{
-    color: deepskyblue;
+    color: rgb(60,74,221);
     font-size: 2.9rem;
     font-weight: 600;
 }
@@ -94,7 +94,7 @@ nav ul a:hover{
     color: white;
 }
 .prof .wel{
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 .desc{
     font-size: 1.1rem;
@@ -108,34 +108,37 @@ nav ul a:hover{
 }
 .desc .i{
     font-size: 2.3rem;
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 .intro{
-    padding: 7px 70px;
-    display: flex;
-    justify-content: space-between;
+    padding: 7px 9rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 div .img img{
-    height: 400px;
-    width: 300px;
+    height: 430px;
+    float: inline-end;
+    border-radius: 10rem 5px 10rem 5px;
+    transform: scale(1.1);
+    border: 7px solid rgb(60,74,221);
 }
 div .img img:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 div .img{
-    clip-path: circle(200px);
+    /* clip-path: circle(200px); */
     margin-top: 50px;
 }
 .btn{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 button{
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgb(0, 84, 117);
+    color: rgb(5, 15, 132);
     padding: 12px 40px;
-    background: linear-gradient(to top, deepskyblue,white);
+    background: linear-gradient(to top, rgb(60,74,221),white);
     border: none;
     cursor: pointer;
     border-radius: 10px;
@@ -154,48 +157,48 @@ button:hover{
 }
 .project .proj{
     font-family: 'Poppins', sans-serif;
-    text-decoration: underline deepskyblue;
+    text-decoration: underline rgb(60,74,221);
 }
 .project .proj #pro{
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 .card_container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 50px;
+    gap: 70px;
     margin-top: 17px;
     padding: 0 70px;
 }
 .card_container .card{
     /* height: 450px; */
     border-radius: 7px;
-    background: linear-gradient(to bottom,rgba(109, 215, 244, 0.308),rgba(255, 255, 255, 0.308));
+    background: linear-gradient(to bottom,rgba(60, 73, 221, 0.388),rgba(255, 255, 255, 0.308));
     box-shadow: 10px 10px 40px rgba(177, 174, 174, 0.5);
     border-top: 1px solid rgba(128, 126, 126, 0.5);
     border-left: 1px solid rgba(219, 201, 201, 0.5);
     backdrop-filter: blur(5px);
 }
 .card_container .card:hover{
-    box-shadow: 2px 3px 5px rgba(196, 196, 196, 0.443);
+    box-shadow: 2px 3px 5px rgba(119, 119, 119, 0.7);
 }
 .card_container .card .btn input{
     padding: 6px 50px;
-    background: linear-gradient(to top, deepskyblue,white);
+    background: linear-gradient(to top, rgb(60,74,221),white);
     border: none;
     font-family: 'Poppins',sans-serif;
     font-weight: 500;
     font-size: 1rem;
     border-radius: 7px;
-    color: rgb(5, 86, 118);
+    color: rgb(4, 13, 104);
     cursor: pointer;
     margin: 0 0 10px 0;
 }
 .card_container .card-title{
     font-family: 'Poppins',sans-serif;
-    text-decoration: underline deepskyblue;
+    text-decoration: underline rgb(60,74,221);
 }
 .card-title #c-code{
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 .card_container .card-text{
     font-family: 'Poppins',sans-serif;
@@ -212,15 +215,18 @@ button:hover{
 
 /* About Section */
 
+.about-warp{
+    /* background: blue fixed; */
+}
 .about {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin-top: 9px;
-    border: 1px solid rgba(0, 0, 0, 0.511);
-    background: linear-gradient(to top left,rgba(109, 215, 244, 0.308),rgba(255, 255, 255, 0.308));
+    /* border: 1px solid rgba(0, 0, 0, 0.511); */
+    background: linear-gradient(to top left,rgba(60, 73, 221, 0.43),rgba(255, 255, 255, 0.308));
     box-shadow: 10px 10px 40px rgba(198, 193, 193, 0.5);
     border-top: 1px solid rgba(128, 126, 126, 0.5);
-    border-left: 1px solid rgba(129, 120, 120, 0.5);
+    /* border-left: 1px solid rgba(129, 120, 120, 0.5); */
     backdrop-filter: blur(5px);
     padding: 20px 50px;
 }
@@ -231,31 +237,35 @@ button:hover{
     height: 350px;
     width: 350px;
     margin-top: 30px;
+    position: relative;
+    left: 9rem;
 }
 .about-head{
     text-align: center;
     font-family: 'Poppins',sans-serif;
     margin: 7px 0;
-    text-decoration: underline deepskyblue;
+    text-decoration: underline rgb(60,74,221);
 }
 .about-head #ab{
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 .about .about-text{
     font-family: 'Poppins',sans-serif;
     text-align: justify;
     text-indent: 20px;
     margin-bottom: 10px;
+    position: relative;
+    right: 2rem;
 }
 #ab-head{
     text-indent: 0;
-    text-decoration: underline deepskyblue;
+    text-decoration: underline rgb(60,74,221);
 }
 #ab-head #sub-head{
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 #ab-para::first-letter{
-    color: deepskyblue;
+    color: rgb(60,74,221);
     font-size: 2rem;
 }
 .about-btn{
@@ -270,13 +280,13 @@ button:hover{
 }
 .about-btn a input{
     padding: 6px 50px;
-    background: linear-gradient(to top, deepskyblue,white);
+    background: linear-gradient(to top, rgba(60, 73, 221, 0.829),white);
     border: none;
     font-family: 'Poppins',sans-serif;
     font-weight: 500;
     font-size: 1rem;
     border-radius: 7px;
-    color: rgb(5, 86, 118);
+    color: rgb(6, 14, 104);
     cursor: pointer;
     margin-bottom: 10px;
 }
@@ -294,8 +304,8 @@ button:hover{
 .application-warp .application ul li{
     list-style: none;
     filter:opacity(0.7);
-    border: 5px solid deepskyblue;
-    background: linear-gradient(to top, deepskyblue,white);
+    border: 5px solid rgb(60,74,221);
+    background: linear-gradient(to top, rgb(60,74,221),white);
     padding: 13px;
     border-radius: 50%;
 }
@@ -309,10 +319,10 @@ button:hover{
 .app-head{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    text-decoration: underline deepskyblue;
+    text-decoration: underline rgb(60,74,221);
 }
 #app-span{
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 
 /* Skills Section */
@@ -335,7 +345,7 @@ button:hover{
 }
 .sk{
     padding: 20px;
-    background: linear-gradient(to top, deepskyblue,white);
+    background: linear-gradient(to top, rgb(60,74,221),white);
     border-radius: 10px;
 }
 .skills-progress .sk .sk-desc p{
@@ -348,17 +358,18 @@ button:hover{
 .skills-progress .sk h3{
     font-family: 'Poppins', sans-serif;
     text-decoration: underline black;
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 .skills-progress .sk input {
-    border: 1px solid gray;
-    padding: 7px 25px;
-    background: linear-gradient(to top, deepskyblue,white);
+    border: none;
+    padding: 7px 30px;
+    background: linear-gradient(to top, rgba(60, 73, 221, 0.782),white);
     border-radius: 7px;
-    color: rgb(59, 59, 59);
+    color: rgb(37, 37, 37);
     cursor: pointer;
     margin-top: 7px;
     width: 100%;
+    box-shadow: 2px 3px 5px rgba(78, 106, 219, 0.409);
 }
 .skills-progress{
     display: grid;
@@ -366,7 +377,7 @@ button:hover{
     gap: 20px;
     padding: 0px 50px;
     margin: 50px 0;
-    box-shadow: 2px 3px 5px rgba(128, 128, 128, 0.409);
+    /*  */
 }
 .skills-progress .sk:nth-child(2n+1){
     transform: translateY(-30px) ;
@@ -377,10 +388,10 @@ button:hover{
 .skill-head{
     text-align: center;
     font-family: 'Poppins',sans-serif;
-    text-decoration: underline deepskyblue;
+    text-decoration: underline rgb(60,74,221);
 }
 .skill-head #skill-span{
-    color: deepskyblue;
+    color: rgb(60,74,221);
 }
 
 /* Back to top */
@@ -417,7 +428,7 @@ button:hover{
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    border: 5px solid deepskyblue;
+    border: 10px solid rgb(60,74,221);
 
 }
 .foot .f-social ul{
@@ -441,4 +452,111 @@ footer p{
 footer p #f{
     text-decoration: underline;
     cursor: pointer;
+}
+.scroll-top i{
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    padding: 10px 30px;
+    background-color: rgb(60,74,221);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.scroll-top a{
+    color: white;
+    text-decoration: none;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transform: translateY(10%);
+}
+.abbox{
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transform: translateY(20%);
+}
+.sk{
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transform: translateY(20%);
+}
+.text{
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transform: translateX(-10%);
+}
+.logo{
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transform: translateY(20%);
+}
+.logo:nth-child(2){
+    transition-delay: 200;
+}
+.logo:nth-child(3){
+    transition-delay: 500;
+}
+.logo:nth-child(4){
+    transition-delay: 800;
+}
+.logo:nth-child(5){
+    transition-delay: 1000;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+    .logo{
+        transition: none;
+    }
+    .sk{
+        transition: none;
+    }
+    .abbox{
+        transition: none;
+    }
+}
+.sub-java-desc{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.597));
+    color: white;
+    padding: 0 23rem;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-content: center;
+    
+}
+.java-description{
+    z-index: 1100;
+    display: none;
+    overflow: visible;
+    position: fixed;
+}
+.close{
+    display: flex;
+    justify-content: end;
+    align-items:end;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.478);
+    cursor: pointer;
+}
+.java-para{
+    text-align: justify;
+    padding: 10px 20px;
+    background-color: rgba(128, 128, 128, 0.641);
+    line-height: 30px;
 }
