@@ -394,19 +394,6 @@ button:hover{
     color: rgb(60,74,221);
 }
 
-/* Back to top */
-/* .btt .cir{
-    padding: 20px;
-    background: linear-gradient(to top, deepskyblue,white);
-    color: white;
-    width: 50px;
-    z-index: 200;
-    float: right;
-    position: sticky;
-    top: 70vh;
-    border-radius: 50%;
-} */
-
 /* Footer Section */
 .foot{
     display: flex;
@@ -528,35 +515,4 @@ footer p #f{
     .abbox{
         transition: none;
     }
-}
-.sub-java-desc{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.597));
-    color: white;
-    padding: 0 23rem;
-    font-family: 'Poppins', sans-serif;
-    display: grid;
-    place-content: center;
-    
-}
-.java-description{
-    z-index: 1100;
-    display: none;
-    overflow: visible;
-    position: fixed;
-}
-.close{
-    display: flex;
-    justify-content: end;
-    align-items:end;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.478);
-    cursor: pointer;
-}
-.java-para{
-    text-align: justify;
-    padding: 10px 20px;
-    background-color: rgba(128, 128, 128, 0.641);
-    line-height: 30px;
 }
