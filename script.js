@@ -19,11 +19,3 @@ hiddenAbout.forEach((el)=> observer.observe(el))
 const hiddenText = document.querySelectorAll('.text');
 hiddenText.forEach((el)=> observer.observe(el))
 
-const java = document.querySelector(".java-description");
-document.getElementById("java").addEventListener('click',()=>{
-    java.style.display = "block";
-})
-const cls = document.querySelector('.close');
-        cls.addEventListener('click',()=>{
-            java.style.display = "none";
-})
